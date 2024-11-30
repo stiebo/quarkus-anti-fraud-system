@@ -19,7 +19,7 @@ public record TransactionOutDto(
         LocalDateTime date,
         @Schema(defaultValue = "MANUAL_PROCESSING")
         String result,
-        @Schema(defaultValue = "")
+        @Schema(defaultValue = "ALLOWED")
         String feedback
 ) {
 }
