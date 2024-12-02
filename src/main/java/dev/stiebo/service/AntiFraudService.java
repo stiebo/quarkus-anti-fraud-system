@@ -5,7 +5,7 @@ import dev.stiebo.dto.*;
 public interface AntiFraudService {
     PostTransactionOutDto postTransaction(PostTransactionInDto postTransactionInDto);
 
-    TransactionOutDto updateTransactionFeedback(UpdateTransactionFeedback feedback);
+    TransactionOutDto updateTransactionFeedback(UploadTransactionFeedbackInDto feedback);
 
     TransactionOutDto[] getTransactionHistory();
 
