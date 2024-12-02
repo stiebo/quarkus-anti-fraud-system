@@ -24,7 +24,7 @@ public class AntiFraudController {
     }
 
     @PutMapping("/transaction")
-    public TransactionOutDto uploadTransactionFeedback(@Valid @RequestBody UpdateTransactionFeedback feedback) {
+    public TransactionOutDto uploadTransactionFeedback(@Valid @RequestBody UploadTransactionFeedbackInDto feedback) {
         return service.updateTransactionFeedback(feedback);
     }
 
