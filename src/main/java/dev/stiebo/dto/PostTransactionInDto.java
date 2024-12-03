@@ -14,14 +14,15 @@ import java.time.LocalDateTime;
 public record PostTransactionInDto(
         @NotNull
         @Min(value = 1L)
+        @Schema(examples = "500")
         Long amount,
         @NotBlank
         @Pattern(regexp = "^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$")
-        @Schema(defaultValue = "192.168.0.1")
+        @Schema(examples = "192.168.0.1")
         String ip,
         @NotBlank
         @LuhnCheck
-        @Schema(defaultValue = "4000008449433402")
+        @Schema(examples = "4000008449433403")
         String number,
         @NotBlank
         @Pattern(regexp = "EAP|ECA|HIC|LAC|MENA|SA|SSA")
@@ -29,5 +30,5 @@ public record PostTransactionInDto(
         @NotNull
         @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
         LocalDateTime date
-        ) {
+) {
 }

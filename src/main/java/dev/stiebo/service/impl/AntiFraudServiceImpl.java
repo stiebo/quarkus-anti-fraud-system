@@ -138,7 +138,7 @@ public class AntiFraudServiceImpl implements AntiFraudService {
     }
 
     @Override
-    public TransactionOutDto updateTransactionFeedback(UpdateTransactionFeedback feedback) {
+    public TransactionOutDto updateTransactionFeedback(UploadTransactionFeedbackInDto feedback) {
         Transaction transaction = transactionRepository.findById(feedback.transactionId())
                 .orElseThrow(TransactionNotFoundException::new);
         if (!transaction.getFeedback().isEmpty()) {

@@ -8,7 +8,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 public record StolenCardInDto(
         @NotBlank
         @LuhnCheck
-        @Schema(defaultValue = "4000008449433403")
+        @Schema(examples = "4000008449433403")
         String number
 ) {
 }

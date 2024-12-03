@@ -6,20 +6,20 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import java.time.LocalDateTime;
 
 public record TransactionOutDto(
-        @Schema(defaultValue = "42")
+        @Schema(examples = "42")
         Long transactionId,
-        @Schema(defaultValue = "234")
+        @Schema(examples = "234")
         Long amount,
-        @Schema(defaultValue = "192.168.1.1")
+        @Schema(examples = "192.168.1.1")
         String ip,
-        @Schema(defaultValue = "4000008449433403")
+        @Schema(examples = "4000008449433403")
         String number,
-        @Schema(defaultValue = "MENA")
+        @Schema(examples = "MENA")
         String region,
         LocalDateTime date,
-        @Schema(defaultValue = "MANUAL_PROCESSING")
+        @Schema(examples = "MANUAL_PROCESSING")
         String result,
-        @Schema(defaultValue = "ALLOWED")
+        @Schema(examples = "ALLOWED")
         String feedback
 ) {
 }
