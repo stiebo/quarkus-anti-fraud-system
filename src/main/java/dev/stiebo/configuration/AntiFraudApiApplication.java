@@ -10,11 +10,13 @@ import org.eclipse.microprofile.openapi.annotations.info.Info;
                 version = "0.0.1",
                 description = """
                         This is a learning project I built for the JetBrains Academy 'Java Backend Developer' course.
-                        It was initially developed with Spring Boot and has now become my first Quarkus application
-                        whereas the 'transfer' took just a few hours using Spring extensions within Quarkus
-                        (specifically Spring Web, Spring DI and Spring Data JPA)
-                        The 'original' project is built with Spring Boot and available here:
-                        https://github.com/stiebo/Anti-Fraud-System
+                        It was initially developed with Spring Boot and has now become my first <b>Quarkus</b> application.
+                        The 'transfer' took just a few hours using Spring extensions within Quarkus
+                        (specifically Spring Web, Spring DI and Spring Data JPA).
+                        The project is deployed through Docker using the <b>native image produced with GraalVM
+                        </b>. The 'original' project is built with Spring Boot and available here:
+                         <a target="_blank" href="https://github.com/stiebo/Anti-Fraud-System">https://github.com/
+                        stiebo/Anti-Fraud-System</a>
                         
                         --------------------------------------------------------------------------------------------
                         Project description:
@@ -24,9 +26,7 @@ import org.eclipse.microprofile.openapi.annotations.info.Info;
                         The Anti-Fraud System project provides a comprehensive framework for detecting and preventing
                         fraudulent financial transactions. By integrating role-based access control, RESTful APIs,
                         heuristic validation rules, and adaptive feedback mechanisms, the system offers a robust
-                        solution for financial institutions to safeguard against fraud. Leveraging Spring Boot and its
-                        associated technologies, the project demonstrates best practices in building secure, scalable,
-                        and maintainable applications in the financial sector.
+                        solution for financial institutions to safeguard against fraud.
                         
                         Link to Github repository: <a target="_blank" href="https://github.com/stiebo/quarkus-anti-
                         fraud-system">https://github.com/stiebo/quarkus-anti-fraud-system</a><br/>
