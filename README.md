@@ -3,9 +3,8 @@
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 This is a learning project I built for the JetBrains Academy 'Java Backend Developer' course.
-It was initially developed with Spring Boot and has now become my first <b>Quarkus</b> application.
-The 'transfer' took just a few hours using Spring extensions within Quarkus
-(specifically Spring Web, Spring DI and Spring Data JPA).
+It was initially developed with Spring Boot and has now become a <b>Quarkus</b> application using Spring extensions 
+within Quarkus (specifically Spring Web, Spring DI and Spring Data JPA).
 The project is deployed through Docker using the <b>native image produced with GraalVM
 </b>. The 'original' project is built with Spring Boot and available here:
 <https://github.com/stiebo/Anti-Fraud-System>
